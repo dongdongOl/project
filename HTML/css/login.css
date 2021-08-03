@@ -1,0 +1,254 @@
+@import url('./common.css');
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 20px 0;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+}
+header .h-wrap {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .h-wrap .hd_logo img{
+    margin:20px 20px;
+}
+header .h-wrap .category{
+    margin-top: 35px;
+}
+header .h-wrap .search{
+    border-bottom:1px solid #000;
+    margin:15px 10px 40px 0px;
+}
+
+header .h-wrap .search input{
+    border:none;
+    outline: none;
+}
+
+header .h-wrap .category > ul > li{
+    display:inline-block;
+    position:relative;
+    z-index:1;
+}
+header .h-wrap .category > ul > li > a{
+    padding:0 10px;
+    font-size:16px;
+}
+
+header .h-wrap .category > ul > li > ul{
+    position:absolute;
+    left:50%; top:20px;
+    text-align:center;
+    transform: translateX(-50%);
+    background-color:#fff;
+    padding:20px;
+    display:none;
+}
+header .h-wrap .category > ul > li > ul > li > a{
+    white-space: nowrap;
+    color: #000;
+    font-size:13px;
+}
+header .h-wrap .category > ul > li:hover > ul{
+    display:block;
+}
+header .h-wrap .search .searchbtn .xi-search {
+    margin-top: 15px;
+}
+header .h-wrap .xi-bars {
+    position:absolute;
+    margin:20px 0 0 81%;
+    font-size:40px;
+}
+main {
+    margin-top:250px;
+}
+main .container form {
+    text-align: center;
+}
+main .container .login {
+    width: 100%;
+    max-width: 510px;
+    margin: 0 auto;
+}
+main .container .login input {
+    width: 100%;
+    display: flex;
+    margin:0 auto;
+    margin-bottom: 10px;
+    border: #EBEBEB 1px solid;
+    border-radius: 10px;
+    padding: 0px 10px;
+    font-size: 15px;
+    height: 65px;
+}
+main .container .login button {
+    width: 100%;
+    background:#000;
+    color:#fff;
+    border: 1px solid#000;
+    border-radius: 10px;
+    height: 65px;
+    cursor: pointer;
+}
+main .container .login ul {
+    margin-top: 1em;
+    box-sizing: border-box;
+    line-height: 2em;
+}
+main .container .login ul li {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    box-sizing: border-box;
+}
+main .container .login li ~ li {
+    border-left: 1px solid#000;
+}
+main .container .login .snapsync-line {
+    color: #000;
+    border-bottom: 1px solid#EBEBEB;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 15px;
+    height: 10px;
+}
+aside .side {
+    position:fixed;
+    right:0;
+    top:50%;
+    background-color:rgb(245, 245, 245);
+    color: #000;
+    z-index: 2;
+}
+aside .side a {
+    font-size: 30px;
+    position: relative;
+}
+aside .side a:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+aside .side > ul > li {
+    border-bottom: 1px solid #000;
+}
+aside .side > ul > li a span {
+    position: absolute;
+    left: -70px;
+    transition: 0.5s all;
+    visibility: hidden;
+    opacity: 0;
+    width: 70px;
+    text-align: center;
+    display: block;
+    background: #222;
+    border-radius: 5px;
+    color: #fff;
+    height: 20px;
+    line-height: 20px;
+    top: 50%;
+    margin-top: -10px;
+    font-size: 10px;
+}
+aside .side >ul >li a span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -6px;
+    margin: -2px 0 0 -6px;
+    border-style: solid;
+    border-width: 5px 4px 0;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-color: #222 transparent;
+    -ms-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+footer {
+    margin-top:250px;
+    background-color: rgb(245, 245, 245);
+}
+footer .footer-service .container .footer h2 {
+    margin-bottom:20px;
+    font-size: 24px;
+}
+footer .footer-service .container .footer li:first-child{
+    font-weight: bold;
+    font-size:20px;
+    margin-bottom: 10px;
+}
+footer .footer-service .container .footer li:last-child{
+    margin-top:10px;
+}
+footer .footer-service .container .footer div h2 {
+    font-size:16px;
+    margin-bottom:20px;
+}
+footer .footer-service .container .footer div p{
+    margin-top:10px;
+    font-size:12px;
+}
+footer .footer-address .footer_01 {
+    text-align: center;
+    color: #9e9e9e;
+    font-size:12px;
+}
+footer .footer-mark .container p{
+    text-align: center;
+}
+footer .section>.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+footer .footer-service {
+    padding: 50px 0;
+}
+footer .footer-service .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+footer .footer-service .container div h2 {
+    margin-bottom:20px;
+}
+footer .footer-service .container .footer_nav ul li {
+    margin: 10px 0 10px 0;
+}
+footer .footer-address {
+    padding: 20px 0;
+}
+footer .footer-mark {
+    background: #fff;
+}
+footer .footer-mark .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+footer .footer-mark .container p {
+    margin:0 auto;
+}
+@media (max-width: 768px) {
+    header .h-wrap .category {
+        width: 33.33333333%;
+    }
+}
+@media (max-width: 480px) {
+    header .h-wrap .category {
+        width: 50%;
+    }
+}
