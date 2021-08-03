@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0,user-scalable=no,target-densitydpi=device-dpi">
+    <title>login</title>
+    <link href="../css/login.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/XEIcon/xeicon.min.css">
+</head>
+<body>
+    <div id="root">
+        <a id="top"></a>
+        <header>
+            <div class="h-wrap">
+                <!-- 로고 -->
+                <div class="hdleft">
+                    <a href="../index.html" class="hd_logo">
+                        <img src="../img/LOGO.jpg" alt="LOGO">
+                    </a>
+                </div>
+                <!-- //로고 -->
+
+                <!-- 카테고리 -->
+                <div class="category">
+                    <ul>
+                        <li>
+                            <a href="#">DIY미니어처</a>
+                        </li>
+                        <li>
+                            <a href="#">핸드메이드</a>
+                        </li>
+                        <li>
+                            <a href="#">소품류</a>
+                            <ul class="tap">
+                                <li>
+                                    <a href="#">금속제품/조명</a>
+                                </li>
+                                <li>
+                                    <a href="#">천/레이스</a>
+                                </li>
+                                <li>
+                                    <a href="#">벽지/기타재료</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">주방용품</a>
+                        </li>
+                        <li>
+                            <a href="#">가구완제품</a>
+                            <ul class="tap">
+                                <li>
+                                    <a href="#">나무제품</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //카테고리 -->
+                <!-- search -->
+                <div class="search">
+                    <input name="#">
+                    <a href="#" class="searchbtn">
+                        <i class="xi-search"></i>
+                    </a>
+                </div>
+                <!-- //search -->
+                <!-- editor -->
+                <i class="xi-bars"></i>
+                <!-- //edtor -->
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="login">
+                    <form action="">
+                        <input type="text" name="user_id" placeholder="아이디" required>
+                        <input type="password" name="user_pw" placeholder="비밀번호" required>
+                        <button type="button" onclick="check();">로그인</button>
+                        <ul>
+                            <li><a href="#">아이디/비밀번호찾기</a></li><li><a href="#">회원가입</a></li>
+                        </ul>
+                        <div class="snapsync-line"></div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!-- side -->
+        <aside>
+            <div class="side">
+                <ul>
+                    <li>
+                        <a href="./service/login.html">
+                            <i class="xi-profile-o"></i>
+                            <span>로그인</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./guide.html">
+                            <i class="xi-cart-o"></i>
+                            <span>장바구니</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#top">
+                            <i class="xi-caret-up-min"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#bottom">
+                            <i class="xi-caret-down-min"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- //side -->
+        <!-- footer -->
+        <footer>
+            <div class="footer-service section">
+                <div class="container">
+                    <div class="footer">
+                        <h2>CS CENTER</h2>
+                        <ul>
+                            <li>010-6221-2216</li>
+                            <li>OPEN AM:10:00 ~ PM:17:00</li>
+                            <li>HOLIDAY SAT SUN OFF</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>BANKING INFO</h2>
+                        <p>
+                            국민:741-21-0211-800
+                            <br>
+                            <br>
+                            예금주:최종오
+                        </p>
+                    </div>
+                    <div class="footer_nav">
+                        <ul>
+                            <li>
+                                <a href="../service/guide.html">이용약관</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <b>개인정보 취급방침</b>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-address section">
+                <p class="footer_01">
+                    회사명:네오팜 | 대표:최종오 | 소재지:경기도 시흥시 군자양지편길 5(군자동) | 사업자번호:130-23-44405
+                    <br>
+                    통신판매신고번호:2019-경기시흥-1704 | 개인정보보호책임자:최종오 | 고객지원센터:010-6211-2216 |
+                    E-mail:jongottan@naver.com
+                </p>
+            </div>
+            <div class="footer-mark section">
+                <div class="container">
+                    <p>
+                        <a href="https://iniweb.inicis.com/popup/common/popup_escrow_notice.jsp?mid=ECAjokm8e9">
+                            <img src="/img/inipay.jpg">
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+        <a id="bottom"></a>
+    </div>
+
+    <script src="../js/common.js"></script>
+</body>
+
+</html>
