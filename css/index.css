@@ -1,0 +1,372 @@
+@import url('./common.css');
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 20px 0;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+}
+header .h-wrap {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .h-wrap .hd_logo img{
+    margin:20px 20px;
+}
+header .h-wrap .category{
+    margin-top: 35px;
+}
+header .h-wrap .search{
+    border-bottom:1px solid #000;
+    margin:15px 10px 40px 0px;
+}
+
+header .h-wrap .search input{
+    border:none;
+    outline: none;
+}
+
+header .h-wrap .category > ul > li{
+    display:inline-block;
+    position:relative;
+    z-index:1;
+}
+header .h-wrap .category > ul > li > a{
+    padding:0 10px;
+    font-size:16px;
+}
+
+header .h-wrap .category > ul > li > ul{
+    position:absolute;
+    left:50%; top:20px;
+    text-align:center;
+    transform: translateX(-50%);
+    background-color:#fff;
+    padding:20px;
+    display:none;
+}
+header .h-wrap .category > ul > li > ul > li > a{
+    white-space: nowrap;
+    color: #000;
+    font-size:13px;
+}
+header .h-wrap .category > ul > li:hover > ul{
+    display:block;
+}
+header .h-wrap .search .searchbtn .xi-search {
+    margin-top: 15px;
+}
+header .h-wrap .xi-bars {
+    position:absolute;
+    margin:20px 0 0 81%;
+    font-size:40px;
+}
+main {
+    padding-top: 131px;
+}
+main>.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+main .main {
+    background-color: rgb(245, 245, 245);
+    margin:30px 0;
+    position: relative;
+}
+main .main .swiper-slide {
+    width: 100%;
+    display: flex;
+}
+main .main .swiper-pagination {
+    width: 100%;
+    bottom: 5%;
+}
+main .main .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+main .main .text {
+    margin: auto;
+    font-size:40px;
+    color:#555;
+    font-weight:bold;
+    text-align:center;
+}
+main .btn .xi-angle-left-thin {
+    font-size:70px;
+    position:absolute;
+    top: 50%;
+    margin-top: -35px;
+    left:5%;
+    color:#000;
+    cursor: pointer;
+    z-index: 5;
+}
+main .main .btn .xi-angle-right-thin {
+    font-size:70px;
+    position:absolute;
+    top: 50%;
+    margin-top: -35px;
+    right:5%;
+    color:#000;
+    cursor: pointer;
+    z-index: 5;
+}
+main .sales {
+    padding: 0 20% 0 20%;
+    margin: 250px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+main .sales .sale {
+    flex: 1;
+    position: relative;
+}
+
+main .sales .sale img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    padding: 0 30px;
+}
+main .sale div{
+    position:absolute; 
+    top: 5px;
+    left: 35px;
+    background-color: white;
+    color: red;
+    padding: 15px;
+}
+aside .side {
+    z-index: 2;
+    position:fixed;
+    right:0;
+    top:50%;
+    background-color:rgb(245, 245, 245);
+    color: #000;
+}
+aside .side a {
+    font-size: 30px;
+    position: relative;
+}
+aside .side a:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+aside .side > ul > li {
+    border-bottom: 1px solid #000;
+}
+aside .side > ul > li a span {
+    position: absolute;
+    left: -70px;
+    transition: 0.5s all;
+    visibility: hidden;
+    opacity: 0;
+    width: 70px;
+    text-align: center;
+    display: block;
+    background: #222;
+    border-radius: 5px;
+    color: #fff;
+    height: 20px;
+    line-height: 20px;
+    top: 50%;
+    margin-top: -10px;
+    font-size: 10px;
+}
+aside .side >ul >li a span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -6px;
+    margin: -2px 0 0 -6px;
+    border-style: solid;
+    border-width: 5px 4px 0;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-color: #222 transparent;
+    -ms-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+main .new {
+    text-align: center;
+    position: relative;
+    max-width: 1680px;
+    margin: 0 auto;
+}
+main .main .swiper-slide {
+    width: 25%;
+}
+main .new h3 {
+    margin: 0 0 20px;
+    font-size: 40px;
+    color:#000;
+}
+main .new div {
+    font-size: 16px;
+    color:#555;
+    margin-top: 30px;
+}
+main .new .swiper-container-mySwiper {
+    padding: 0 20% 0 20%;
+    margin: 40px;
+    justify-content: space-evenly;
+    display:flex;
+}
+main .new img {
+    padding:10px;
+}
+main .new p {
+    text-align: center;
+    margin: 20px;
+}
+main .new .new-btn>i {
+    top: 50%;
+    margin:-35px;
+    font-size: 70px;
+    color:#000;
+    position: absolute;
+    cursor: pointer;
+    z-index: 5;
+}
+main .new .new-btn .xi-angle-left-thin {
+    left: -40px;
+}
+main .new .new-btn .xi-angle-right-thin {
+    right: -40px;
+}
+main .best {
+    margin-top: 200px;
+    text-align: center;
+}
+main .best h3 {
+    margin: 0 0 20px;
+    font-size: 40px;
+    color:#000;
+}
+main .best div {
+    margin:0 0 30px;
+    font-size: 16px;
+    color:#555;
+}
+main .best .container3 {
+    display:flex;
+    flex-wrap:wrap;
+    max-width:1280px;
+    margin:0 auto;
+}
+main .best .container3 figure {
+    position: relative;
+    padding-top: 129%;
+}
+main .best .container3 img {
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+main .best .container3 li {
+    margin-top:50px;
+    width:25%;
+}
+main .best .container3 li p {
+    margin-top:10px;
+}
+main .best .container3 li figcaption {
+    margin-top:10px;
+}
+footer {
+    margin-top:100px;
+    background-color: rgb(245, 245, 245);
+}
+footer .footer-service .container .footer h2 {
+    margin-bottom:20px;
+    font-size: 24px;
+}
+footer .footer-service .container .footer li:first-child{
+    font-weight: bold;
+    font-size:20px;
+    margin-bottom: 10px;
+}
+footer .footer-service .container .footer li:last-child{
+    margin-top:10px;
+}
+footer .footer-service .container .footer div h2 {
+    font-size:16px;
+    margin-bottom:20px;
+}
+footer .footer-service .container .footer div p{
+    margin-top:10px;
+    font-size:12px;
+}
+footer .footer-address .footer_01 {
+    text-align: center;
+    color: #9e9e9e;
+    font-size:12px;
+}
+footer .footer-mark .container p{
+    text-align: center;
+}
+footer .section>.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+footer .footer-service {
+    padding: 50px 0;
+}
+footer .footer-service .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+footer .footer-service .container div h2 {
+    margin-bottom:20px;
+}
+footer .footer-service .container .footer_nav ul li {
+    margin: 10px 0 10px 0;
+}
+footer .footer-address {
+    padding: 20px 0;
+}
+footer .footer-mark {
+    background: #fff;
+}
+footer .footer-mark .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+footer .footer-mark .container p {
+    margin:0 auto;
+}
+@media (max-width: 1199px) {
+    main .h-wrap .category {
+        width: 50%;
+    }
+}
+@media (max-width: 768px) {
+    main .best .container3 li {
+        width: 33.33333333%;
+    }
+}
+@media (max-width: 480px) {
+    main .best .container3 li {
+        width: 50%;
+    }
+}
